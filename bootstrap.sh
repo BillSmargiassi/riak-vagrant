@@ -14,7 +14,7 @@ apt-get install -y libc6-dev-i386 git
 cat /vagrant/limits.insert >> /etc/security/limits.conf
 
 # Install Erlang
-wget http://s3.amazonaws.com/downloads.basho.com/erlang/ otp_src_R16B02-basho5.tar.gz
+wget http://s3.amazonaws.com/downloads.basho.com/erlang/otp_src_R16B02-basho5.tar.gz
 tar xzvf otp_src_R16B02-basho5
 cd otp_src_R16B02-basho5
 ./configure
