@@ -32,6 +32,10 @@ git checkout -b "${RVER}"
 
 make devrel
 
+cd ..
+
+chown -R vagrant.vagrant otp_src_R16B02-basho5 riak
+
 echo ******************************************************
 echo *** Restarting instance to configure nofiles limit ***
 echo ******************************************************
