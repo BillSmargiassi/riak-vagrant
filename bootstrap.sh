@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 RVER=riak-2.1.3
+DEVNODES=5
 
 apt-get update
 # Ubuntu dependencies
@@ -30,7 +31,7 @@ cd riak
 # checkoug a recent build
 git checkout -b "${RVER}"
 
-make devrel
+make devrel DEVNODES="=$DEVNODES"
 
 cd ..
 
