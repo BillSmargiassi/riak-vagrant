@@ -40,5 +40,3 @@ chown -R vagrant.vagrant otp_src_R16B02-basho5 riak
 echo ******************************************************
 echo *** Restarting instance to configure nofiles limit ***
 echo ******************************************************
-
-shutdown -r now
