@@ -33,7 +33,7 @@ cd riak
 # checkoug a recent build
 git checkout -b "${RVER}"
 
-make devrel DEVNODES="=$DEVNODES"
+make devrel DEVNODES="$DEVNODES"
 
 cd ..
 
