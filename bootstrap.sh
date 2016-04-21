@@ -10,6 +10,8 @@ apt-get install -y build-essential libncurses5-dev openssl libssl-dev fop xsltpr
 apt-get install -y libpam0g-dev libssl0.9.8
 # Install riak dependencies
 apt-get install -y libc6-dev-i386 git
+# Install curl for testing
+apt-get install -y curl
 
 # Set number of files nice and high
 cat /vagrant/limits.insert >> /etc/security/limits.conf
