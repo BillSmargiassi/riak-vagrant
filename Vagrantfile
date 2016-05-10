@@ -4,6 +4,7 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = "hashicorp/precise64"
+  config.vm.network :forwarded_port, guest: 8888, host: 8889
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.provision :reload   # reboot for the nofiles limit
   config.vm.provision :shell, inline: "su -c /vagrant/start-riak.sh vagrant"
